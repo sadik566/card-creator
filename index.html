@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-front">
+          <img src="images/card-logo.svg" alt />
+          <p
+            style="
+              font-size: 32px;
+              color: hsl(0, 100%, 100%);
+              padding: 50px 0 30px 0;
+            "
+            id="card-code">
+            0000 0000 0000 0000
+          </p>
+          <div>
+            <p
+              style="
+                display: inline-block;
+                color: hsl(270, 3%, 87%);
+                padding-right: 200px;
+              "
+              id="card-name">
+              Jane Appleseed
+            </p>
+            <p
+              style="display: inline-block; color: hsl(270, 3%, 87%)"
+              id="card-history">
+              00/00
+            </p>
+          </div>
+        </div>
+
+        <div class="card-back">
+          <p
+            style="
+              color: hsl(0, 100%, 100%);
+              position: absolute;
+              top: 110px;
+              left: 365px;
+            "
+            id="card-cvv">
+            000
+          </p>
+        </div>
+      </div>
+
+      <div class="form">
+        <div class="card-form">
+          <p>Cardholder Name</p>
+          <input id="new-card-name" style="width: 60%" type="text" />
+          <p>Card Number</p>
+          <input id="new-card-code" style="width: 60%" type="text" />
+          <p>
+            Exp. Date (MM/YY) &nbsp; &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            CVC
+          </p>
+          <span><input id="new-card-history1" style="width: 10%" type="number" /></span>
+          <span><input id="new-card-history2" style="margin: 0 20px 0 10px; width: 10%"
+              type="number" /></span>
+          <span><input id="new-cvv" style="width: 29%" type="number" /></span> <br />
+          <button id="confirm-btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
